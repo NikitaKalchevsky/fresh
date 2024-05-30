@@ -1,0 +1,50 @@
+.partners {
+  padding: 40px 0;
+  background: #f6f6f6;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    @include mq ("tablet") {
+      display: flow;
+
+    }
+  }
+
+  &__box {
+    display: flex;
+
+    @include mq ("tablet") {
+      margin-bottom: 40px;
+    }
+  }
+
+
+
+  &__title {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  &__text {
+    font-weight: 400;
+    color: #505050;
+    font-size: 14px;
+  }
+
+  &__content {
+    max-width: 190px;
+    width: 100%;
+
+    @include mq ("tablet") {
+      max-width: 220px;
+    }
+  }
+
+  &__img {
+    margin-right: 20px;
+  }
+}

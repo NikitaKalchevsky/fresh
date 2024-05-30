@@ -1,0 +1,60 @@
+$breakpoints: ("phone": 560px,
+  "phone-2": 600px,
+  "tablet": 768px,
+  "tablet-2": 992px,
+  "desktop": 1200px,
+  "desktop-2": 1310px);
+
+$white: #ffffff;
+$graybtn: #31352B;
+$green: #63A60E;
+$title: #121212;
+$red: #CF3E3B;
+$orange: #FF7A00;
+$gray: #505050;
+
+%OpenSans {
+  font-family: "OpenSans", sans-serif;
+  font-weight: 700;
+}
+
+%OpenSans {
+  font-family: "OpenSans", sans-serif;
+  font-weight: 300;
+}
+
+%OpenSans {
+  font-family: "OpenSans", sans-serif;
+  font-weight: 400;
+}
+
+%OpenSans {
+  font-family: "OpenSans-SemiBold",
+    sans-serif;
+  font-weight: 700;
+}
+
+
+%Ruda {
+  font-family: "Ruda",
+    sans-serif;
+  font-weight: 900;
+}
+
+%Ruda {
+  font-family: "Ruda",
+    sans-serif;
+  font-weight: 700;
+}
+
+%Ruda {
+  font-family: "Ruda",
+    sans-serif;
+  font-weight: 400;
+}
+
+%Ruda-SemiBold {
+  font-family: "Ruda-SemiBold",
+    sans-serif;
+  font-weight: 700;
+}

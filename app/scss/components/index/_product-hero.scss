@@ -1,0 +1,252 @@
+.product-hero {
+  padding: 45px 0;
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__category {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+
+    @include mq ("tablet") {
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+    }
+  }
+
+  &__category-link {
+    text-transform: uppercase;
+  }
+
+  &__list {
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+
+  &__category-link {
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #505050;
+    font-size: 15px;
+    font-weight: 700;
+    @extend %Ruda;
+  }
+
+  &__category-link--active {
+    border-bottom: 3px solid #e0edcf;
+  }
+}
+
+.product {
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+
+    @include mq ("desktop") {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    @include mq ("tablet-2") {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px;
+    }
+
+    @include mq ("tablet") {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__btn {
+    color: $green;
+    background-color: $white;
+
+    border: 1px solid #63a60e;
+
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+
+}
+
+
+.product-card {
+  max-width: 100%;
+  width: 100%;
+  height: 409px;
+  padding: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.2);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+
+  @include mq ("phone") {
+    height: 370px;
+  }
+
+  &__bl {
+    display: flex;
+    justify-content: right;
+  }
+
+  &__img {
+    margin-bottom: 20px;
+    max-height: 215px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+  }
+
+  &__text {
+
+    font-size: 14px;
+    height: 60px;
+    @include line-clamp(3);
+  }
+
+  &__select {
+    cursor: pointer;
+  }
+
+  &__old-price {
+    color: #c1c1c1;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 11px;
+      transform: rotate(-13deg);
+      background-color: #c1c1c1;
+      width: 50px;
+      height: 1px;
+    }
+  }
+
+  &__new-price {
+    color: #505050;
+  }
+
+  &__btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 3px;
+    background-color: $green;
+    position: relative;
+    margin-top: auto;
+
+    &::before {
+      content: '';
+      background-image: url('../images/ico/cart.svg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+
+.product-card--discount {
+  position: relative;
+
+  &::before {
+    content: '-50%';
+    background-color: $red;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: $white;
+    font-size: 10px;
+
+    border-radius: 7px;
+    padding: 5px 10px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+}
+
+.product-card--new {
+  position: relative;
+
+  &::before {
+    content: 'НОВИНКА';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: $white;
+    font-size: 10px;
+    background-color: $green;
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+
+  }
+}
+
+.product-card--hit {
+  position: relative;
+
+  &::before {
+    content: 'ХИТ';
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    color: $white;
+    font-size: 10px;
+    background-color: $orange;
+    border-radius: 7px;
+    padding: 5px 10px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+}
+
+.product-card--sale {
+  position: relative;
+
+  &::before {
+    content: 'НОВИНКА';
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    color: $white;
+    font-size: 10px;
+    background-color: $green;
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+
+  }
+
+  &::after {
+    content: '-50%';
+    position: absolute;
+    top: 40px;
+    left: 8px;
+    background-color: $red;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 10px;
+    color: $white;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+}

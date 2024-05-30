@@ -1,0 +1,24 @@
+.sponsor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 0;
+
+  @include mq("tablet") {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+
+    &__img:nth-child(1) {
+      margin-right: 40px;
+    }
+
+    &__img:nth-child(3),
+    &__img:nth-child(4),
+    &__img:nth-child(5),
+    &__img:nth-child(6) {
+      display: none;
+    }
+  }
+
+}

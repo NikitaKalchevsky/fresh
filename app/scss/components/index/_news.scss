@@ -1,0 +1,79 @@
+.news {
+  padding-bottom: 70px;
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+
+    @include mq("phone") {
+      display: block;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 40px;
+
+    @include mq("phone") {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    @include mq("desktop") {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @include mq("tablet") {
+      gap: 20px;
+    }
+  }
+
+  &__item {
+    max-width: 410px;
+    width: 100%;
+    min-height: 348px;
+    position: relative;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+
+    @include mq("phone") {
+      min-height: 305px;
+    }
+  }
+
+  &__inner {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 20px;
+    background-color: $white;
+    padding: 10px;
+    border-radius: 0 0 4px 4px;
+    text-align: center;
+  }
+
+  &__month {
+    font-size: 10px;
+  }
+
+  &__day {
+    font-size: 30px;
+  }
+
+  &__content {
+    padding: 10px;
+    font-size: 16px;
+
+    @include mq("phone") {
+      font-size: 14px;
+    }
+  }
+}
