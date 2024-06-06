@@ -1,0 +1,162 @@
+.top-slider {
+  max-width: 1920px;
+  margin: 0 auto;
+
+  &__item {
+    height: 600px;
+
+    @include mq("phone") {
+      height: 400px;
+    }
+
+    @include mq("desktop") {
+      max-width: 1200px;
+      max-height: 400px;
+    }
+
+    @include mq("phone") {
+      max-width: 600px;
+      max-height: 350px;
+    }
+  }
+
+  &__content {
+    padding: 140px 0;
+
+    @include mq("desktop") {
+      padding: 60px 0;
+    }
+
+    @include mq("phone") {
+      padding: 40px 0;
+    }
+  }
+
+  &__box {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px 30px 50px 30px;
+    border-radius: 4px;
+
+    @include mq("tablet") {
+      padding: 30px 30px 24px 30px;
+    }
+  }
+
+  &__title {
+    font-size: 60px;
+    color: #505050;
+    max-width: 860px;
+    width: 100%;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 900;
+
+    @include mq("tablet-2") {
+      font-size: 40px;
+    }
+
+    @include mq("tablet") {
+      font-size: 30px;
+    }
+
+    @include mq("phone") {
+      font-size: 25px;
+    }
+
+    span {
+      display: block;
+      color: #CF3E3B;
+    }
+  }
+
+  &__text {
+    margin-bottom: 40px;
+  }
+
+  &__link {
+    background-color: $green;
+    border-radius: 6px;
+    padding: 12px 24px;
+    color: $white;
+
+  }
+
+
+
+  &__inner {
+    position: relative;
+
+
+    .slick-prev,
+    .slick-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 50;
+      width: 40px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      transition: all 0.4s;
+
+      &:hover {
+        background: #e0edcf;
+
+        svg {
+          path {
+            fill: #63A60E;
+          }
+        }
+      }
+
+      &:focus {
+        box-shadow: 0 0 0 3px rgba(99, 166, 14, 0.5);
+        border-radius: 6px;
+      }
+
+      &:active {
+        svg {
+          path {
+            fill: #63A60E;
+          }
+        }
+      }
+
+      @include mq("desktop") {
+        display: none;
+      }
+
+      path {
+        fill: #505050;
+
+      }
+    }
+
+    .slick-disabled {
+      background-color: #fff;
+      box-shadow: 0 7px 20px 0 rgba(192, 192, 192, 0.3);
+
+
+
+      path {
+        fill: red;
+      }
+    }
+
+    .slick-prev {
+      left: 20px;
+    }
+
+    .slick-next {
+      right: 20px;
+    }
+
+    .slick-next:before,
+    .slick-prev:before {
+      display: none;
+    }
+  }
+}

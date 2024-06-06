@@ -1,0 +1,21 @@
+@import "reset";
+@import "fonts";
+@import "vars";
+@import "libs";
+@import "mixin";
+@import "global";
+
+@import './components/parts/_header';
+@import './components/index/_top-slider';
+@import './components/parts/_partners';
+@import './components/parts/_footer';
+@import './components/index/_product-hero';
+@import './components/index/_promotion';
+@import './components/index/_promotional-products';
+@import './components/index/_sponsor';
+@import './components/index/_news';
+@import './components/page-catalog/_page-catalog';
+@import './components/parts/_breadcrumbs';
+@import './components/page-product/_product-info';
+@import './components/page-product/_product-reviews';
+@import './components/page-product/_product-other';

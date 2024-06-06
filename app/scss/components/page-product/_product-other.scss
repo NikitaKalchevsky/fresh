@@ -1,0 +1,54 @@
+.product-other {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  &__title {
+    margin-bottom: 50px;
+    font-size: 30px;
+    text-transform: uppercase;
+    position: relative;
+  }
+
+  &__item {
+    padding: 20px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    top: -70px;
+    transform: translateY(-50%);
+    z-index: 50;
+    width: 65px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+
+
+
+    path {
+      fill: #505050;
+    }
+  }
+
+  .slick-prev {
+    left: 85%;
+
+    svg {
+      border: 1px solid $borber;
+      border-radius: 6px;
+    }
+  }
+
+  .slick-next {
+    right: 2%;
+
+    svg {
+      border: 1px solid $borber;
+      border-radius: 6px;
+    }
+  }
+}

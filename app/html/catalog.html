@@ -1,0 +1,11 @@
+@include('components/parts/_head.html',{
+"pageTitle": "Каталог товаров"
+})
+@include('components/parts/_header.html')
+@include('components/parts/_breadcrumbs.html',{"hide": "hide"})
+<main class="main">
+  @include('components/page-catalog/_page-catalog.html')
+
+  @include('components/parts/_partners.html')
+</main>
+@include('components/parts/_footer.html')
