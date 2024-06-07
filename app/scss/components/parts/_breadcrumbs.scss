@@ -4,6 +4,10 @@
 
   &__items {
     display: flex;
+
+    @include mq ("phone-2") {
+      flex-direction: column;
+    }
   }
 
   &__item {

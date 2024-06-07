@@ -37,6 +37,10 @@
     "nouislider": "^15.7.2",
     "rateyo": "^2.3.2",
     "sass": "^1.69.5",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "swiper": "^11.1.4"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4"
   }
 }

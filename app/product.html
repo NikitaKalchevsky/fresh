@@ -352,14 +352,21 @@
     <h1 class="sr-only">
       Страница с детальным описанием товара
     </h1>
-    <div class="product__container">
-      <div class="product-slider">
-        <div class="product-slider__item">
-          <img class="product-slider__img" width="400" height="400" src="images/product/1b.jpg" alt="фото товара">
-        </div>
-        <div class="product-slider__item">
-          <img class="product-slider__img" width="400" height="400" src="images/product/1b.jpg" alt="фото товара">
+    <div class="product__container ">
+      <div class="product-swiper">
 
+        <div class="swiper">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide product-swiper__slide">
+              <img class="product-swiper__img" src="images/product/1b.jpg" alt="фото товара">
+            </li>
+
+            <li class="swiper-slide product-swiper__slide">
+              <img class="product-swiper__img" src="images/product/1b.jpg" alt="фото товара">
+            </li>
+          </ul>
+          <div class="swiper-button-prev product-swiper__prev"></div>
+          <div class="swiper-button-next product-swiper__next"></div>
         </div>
       </div>
 
@@ -637,137 +644,159 @@
 </section>
   <section class="product-other">
   <div class="container">
-    <h3 class="product-other__title">
-      ВАС МОЖЕТ ЗАИНТЕРЕСОВАТь
-    </h3>
-    <ul class="product-other__items">
-      <li class="product-other__item">
-        <article class="product-card product-card--hit">
-          <div class="product-card__bl">
-            <img class="product-card__select" src="images/ico/select.svg" alt="">
-          </div>
-          <a href="#">
-            <img class="product-card__img" src="images/product/3.jpg" alt="product">
-          </a>
-          <p class="product-card__text">
-            Питахайя красная с белой мякотью, 1шт
-          </p>
-          <div class="product-card__inner">
-            <div class="product-card__price">
-              <p class="product-card__old-price disable">199 ₴</p>
-              <p class="product-card__new-price">101 ₴</p>
-            </div>
-            <button class="product-card__btn">
-            </button>
-          </div>
-        </article>
-      </li>
-      <li class="product-other__item">
-        <article class="product-card product-card--hit">
-          <div class="product-card__bl">
-            <img class="product-card__select" src="images/ico/select.svg" alt="">
-          </div>
-          <a href="#">
-            <img class="product-card__img" src="images/product/5.jpg" alt="product">
-          </a>
-          <p class="product-card__text">
-            Морковь молодая с бабушкиной грядки, 1кг
-          </p>
-          <div class="product-card__inner">
-            <div class="product-card__price">
-              <p class="product-card__old-price disable">199 ₴</p>
-              <p class="product-card__new-price">19 ₴</p>
-            </div>
-            <button class="product-card__btn">
-            </button>
-          </div>
-        </article>
-      </li>
-      <li class="product-other__item">
-        <article class="product-card product-card--discount">
-          <div class="product-card__bl">
-            <img class="product-card__select" src="images/ico/select.svg" alt="">
-          </div>
-          <a href="#">
-            <img class="product-card__img" src="images/product/6.jpg" alt="product">
-          </a>
-          <p class="product-card__text">
-            Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин безалкогольн...
-          </p>
-          <div class="product-card__inner">
-            <div class="product-card__price">
-              <p class="product-card__old-price">49 ₴</p>
-              <p class="product-card__new-price">29 ₴</p>
-            </div>
-            <button class="product-card__btn">
-            </button>
-          </div>
-        </article>
-      </li>
-      <li class="product-other__item">
-        <article class="product-card product-card--new">
-          <div class="product-card__bl">
-            <img class="product-card__select" src="images/ico/select.svg" alt="">
-          </div>
-          <a href="#">
-            <img class="product-card__img" src="images/product/7.jpg" alt="product">
-          </a>
-          <p class="product-card__text">
-            Кофе с коноплей органический Caffé Salomoni 250г
-          </p>
-          <div class="product-card__inner">
-            <div class="product-card__price">
-              <p class="product-card__old-price disable">199 ₴</p>
-              <p class="product-card__new-price">219 ₴</p>
-            </div>
-            <button class="product-card__btn">
-            </button>
-          </div>
-        </article>
-      </li>
-      <li class="product-other__item">
-        <article class="product-card product-card--new">
-          <div class="product-card__bl">
-            <img class="product-card__select" src="images/ico/select.svg" alt="">
-          </div>
-          <a href="#">
-            <img class="product-card__img" src="images/product/7.jpg" alt="product">
-          </a>
-          <p class="product-card__text">
-            Кофе с коноплей органический Caffé Salomoni 250г
-          </p>
-          <div class="product-card__inner">
-            <div class="product-card__price">
-              <p class="product-card__old-price disable">199 ₴</p>
-              <p class="product-card__new-price">219 ₴</p>
-            </div>
-            <button class="product-card__btn">
-            </button>
-          </div>
-        </article>
-      </li>
-      <li class="product-other__item">
-        <article class="product-card">
-          <div class="product-card__bl">
-            <img class="product-card__select" src="images/ico/select.svg" alt="">
-          </div>
-          <a href="#">
-            <img class="product-card__img" src="images/product/2.jpg" alt="product">
-          </a>
-          <p class="product-card__text">
-            Лимон, 1кг
-          </p>
-          <div class="product-card__inner">
-            <div class="product-card__price">
-              <p class="product-card__old-price disable">199 ₴</p>
-              <p class="product-card__new-price">49 ₴</p>
-            </div>
-            <button class="product-card__btn">
-            </button>
-          </div>
-        </article>
-      </li>
-    </ul>
+    <div class="product-other__top">
+      <h3 class="product-other__title">
+        ВАС МОЖЕТ ЗАИНТЕРЕСОВАТь
+      </h3>
+      <div class="product-other__slider-btn">
+        <div class="product-other__prev">
+          <button class="product-other__btn" type="button">
+            <img src="images/ico/icon-arrow-left.svg" alt="">
+          </button>
+        </div>
+        <div class="product-other__next">
+          <button class="product-other__btn" type="button">
+            <img src="images/ico/icon-arrow-left.svg" alt="">
+          </button>
+        </div>
+
+      </div>
+    </div>
+    <div class="product-other__swiper">
+      <div class="product-other__gallary">
+
+        <ul class="product-other__items swiper-wrapper">
+          <li class="product-other__item swiper-slide">
+            <article class="product-card product-card--hit">
+              <div class="product-card__bl">
+                <img class="product-card__select" src="images/ico/select.svg" alt="">
+              </div>
+              <a href="product.html">
+                <img class="product-card__img" src="images/product/3.jpg" alt="product">
+              </a>
+              <p class="product-card__text">
+                Питахайя красная с белой мякотью, 1шт
+              </p>
+              <div class="product-card__inner">
+                <div class="product-card__price">
+                  <p class="product-card__old-price disable">199 ₴</p>
+                  <p class="product-card__new-price">101 ₴</p>
+                </div>
+                <button class="product-card__btn">
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="product-other__item swiper-slide">
+            <article class="product-card product-card--hit">
+              <div class="product-card__bl">
+                <img class="product-card__select" src="images/ico/select.svg" alt="">
+              </div>
+              <a href="product.html">
+                <img class="product-card__img" src="images/product/5.jpg" alt="product">
+              </a>
+              <p class="product-card__text">
+                Морковь молодая с бабушкиной грядки, 1кг
+              </p>
+              <div class="product-card__inner">
+                <div class="product-card__price">
+                  <p class="product-card__old-price disable">199 ₴</p>
+                  <p class="product-card__new-price">19 ₴</p>
+                </div>
+                <button class="product-card__btn">
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="product-other__item swiper-slide">
+            <article class="product-card product-card--discount">
+              <div class="product-card__bl">
+                <img class="product-card__select" src="images/ico/select.svg" alt="">
+              </div>
+              <a href="product.html">
+                <img class="product-card__img" src="images/product/6.jpg" alt="product">
+              </a>
+              <p class="product-card__text">
+                Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин безалкогольн...
+              </p>
+              <div class="product-card__inner">
+                <div class="product-card__price">
+                  <p class="product-card__old-price">49 ₴</p>
+                  <p class="product-card__new-price">29 ₴</p>
+                </div>
+                <button class="product-card__btn">
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="product-other__item swiper-slide">
+            <article class="product-card product-card--new">
+              <div class="product-card__bl">
+                <img class="product-card__select" src="images/ico/select.svg" alt="">
+              </div>
+              <a href="product.html">
+                <img class="product-card__img" src="images/product/7.jpg" alt="product">
+              </a>
+              <p class="product-card__text">
+                Кофе с коноплей органический Caffé Salomoni 250г
+              </p>
+              <div class="product-card__inner">
+                <div class="product-card__price">
+                  <p class="product-card__old-price disable">199 ₴</p>
+                  <p class="product-card__new-price">219 ₴</p>
+                </div>
+                <button class="product-card__btn">
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="product-other__item swiper-slide">
+            <article class="product-card product-card--new">
+              <div class="product-card__bl">
+                <img class="product-card__select" src="images/ico/select.svg" alt="">
+              </div>
+              <a href="product.html">
+                <img class="product-card__img" src="images/product/7.jpg" alt="product">
+              </a>
+              <p class="product-card__text">
+                Кофе с коноплей органический Caffé Salomoni 250г
+              </p>
+              <div class="product-card__inner">
+                <div class="product-card__price">
+                  <p class="product-card__old-price disable">199 ₴</p>
+                  <p class="product-card__new-price">219 ₴</p>
+                </div>
+                <button class="product-card__btn">
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="product-other__item swiper-slide">
+            <article class="product-card">
+              <div class="product-card__bl">
+                <img class="product-card__select" src="images/ico/select.svg" alt="">
+              </div>
+              <a href="product.html">
+                <img class="product-card__img" src="images/product/2.jpg" alt="product">
+              </a>
+              <p class="product-card__text">
+                Лимон, 1кг
+              </p>
+              <div class="product-card__inner">
+                <div class="product-card__price">
+                  <p class="product-card__old-price disable">199 ₴</p>
+                  <p class="product-card__new-price">49 ₴</p>
+                </div>
+                <button class="product-card__btn">
+                </button>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <div class="swiper-pagination product-other__pagination"></div>
+      </div>
+
+    </div>
   </div>
 </section>
 </main>

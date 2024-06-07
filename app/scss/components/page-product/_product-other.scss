@@ -6,49 +6,107 @@
     margin-bottom: 50px;
     font-size: 30px;
     text-transform: uppercase;
-    position: relative;
+
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__prev,
+  &__next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    top: -70px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid $gray;
+    border-radius: 6px;
+    color: $borber;
+    transition: all 0.4s;
+
+    &:hover {
+      border: 1px solid $green;
+      background-color: $green;
+    }
+
+    @include mq ("tablet") {
+      display: none;
+    }
+
+
+  }
+
+  &__prev {
+    margin-right: 50px;
+
+  }
+
+  &__next {
+    rotate: 180deg;
+
+    img {}
+  }
+
+  &__slider-btn {
+    display: flex;
+
+  }
+
+
+
+  &__items {
+    padding: 10px 0;
+
   }
 
   &__item {
-    padding: 20px;
-  }
+    padding: 30px;
+    max-width: 298px;
 
-  .slick-prev,
-  .slick-next {
-    position: absolute;
-    top: -70px;
-    transform: translateY(-50%);
-    z-index: 50;
-    width: 65px;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 6px;
-    border: none;
-    cursor: pointer;
-    outline: none;
+    @include mq ("phone-2") {
+      max-width: 172px;
+      padding: 20px;
 
-
-
-    path {
-      fill: #505050;
+      .product-card {
+        height: 320px;
+      }
     }
   }
 
-  .slick-prev {
-    left: 85%;
-
-    svg {
-      border: 1px solid $borber;
-      border-radius: 6px;
-    }
+  .product-other__gallary .swiper-wrapper {
+    box-sizing: content-box;
   }
 
-  .slick-next {
-    right: 2%;
+  &__swiper {
+    position: relative;
+    max-width: 1290px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    svg {
-      border: 1px solid $borber;
-      border-radius: 6px;
-    }
+  }
+
+  &__gallary {
+    max-width: 1290px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+  }
+
+
+
+  &__pagination {
+
+    @include mq ("tablet-2") {}
+  }
+
+
+  .swiper-pagination-bullet-active {
+    background: $green;
   }
 }
