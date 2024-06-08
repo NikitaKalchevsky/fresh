@@ -20,8 +20,10 @@
 
   &__box {
     display: flex;
+  }
 
-
+  .product-card__container {
+    margin-top: auto;
   }
 
   &__burger {
