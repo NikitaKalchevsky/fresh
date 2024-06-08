@@ -37,47 +37,29 @@ $(
 ).styler();
 
 //slider
-$(".top-slider__inner").slick({
-  dots: false,
-  infinite: true,
-  arrows: true,
-  speed: 500,
-  autoplay: false,
-  autoplaySpeed: 2000,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  prevArrow:
-    '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="arrow"><path fill="#134563" d="M37.9 46 24.1 32.3l13.8-13.7 2 2-11.8 11.7L39.9 44l-2 2"></path></svg></button>',
-  nextArrow:
-    '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 64 64" viewBox="0 0 64 64" id="arrow"><path fill="#134563" d="m-210.9-289-2-2 11.8-11.7-11.8-11.7 2-2 13.8 13.7-13.8 13.7" transform="translate(237 335)"></path></svg></button>',
-
-  breakpoint: 993,
-  settings: {
-    draggable: true,
-    arrows: false,
-    dots: true,
-    autoplay: false,
-  },
-});
-//--------------------------------------------------------------
-
-// $(".product-other__items").slick({
+// $(".top-slider__inner").slick({
 //   dots: false,
 //   infinite: true,
 //   arrows: true,
 //   speed: 500,
 //   autoplay: false,
 //   autoplaySpeed: 2000,
-//   slidesToShow: 4,
+//   slidesToShow: 1,
 //   slidesToScroll: 1,
-//   padding: "30px",
 //   prevArrow:
 //     '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="arrow"><path fill="#134563" d="M37.9 46 24.1 32.3l13.8-13.7 2 2-11.8 11.7L39.9 44l-2 2"></path></svg></button>',
 //   nextArrow:
 //     '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 64 64" viewBox="0 0 64 64" id="arrow"><path fill="#134563" d="m-210.9-289-2-2 11.8-11.7-11.8-11.7 2-2 13.8 13.7-13.8 13.7" transform="translate(237 335)"></path></svg></button>',
-// });
 
-// -------------------------------------------------------------
+//   breakpoint: 993,
+//   settings: {
+//     draggable: true,
+//     arrows: false,
+//     dots: true,
+//     autoplay: false,
+//   },
+// });
+//--------------------------------------------------------------
 
 //MIXitUP
 document.addEventListener("DOMContentLoaded", function () {
@@ -199,9 +181,31 @@ var swiper2 = new Swiper(".product-other__gallary", {
       slidesPerView: 2,
       spaceBetween: 20,
     },
-    // 1024: {
-    //   slidesPerView: 4,
-    //   spaceBetween: 20,
-    // },
   },
+});
+
+var swiper3 = new Swiper(".top-slider", {
+  loop: true,
+  speed: 1500,
+  slidesPerView: 1,
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".top-slider__next",
+    prevEl: ".top-slider__prev",
+  },
+
+  // breakpoints: {
+  //   640: {
+  //     slidesPerView: 1,
+  //     spaceBetween: 10,
+  //   },
+  //   768: {
+  //     slidesPerView: 2,
+  //     spaceBetween: 20,
+  //   },
+  // },
 });

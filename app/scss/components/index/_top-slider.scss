@@ -1,30 +1,86 @@
 .top-slider {
-  max-width: 1920px;
   margin: 0 auto;
+  overflow: hidden;
+
+  &__inner {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+  }
 
   &__item {
-    height: 600px;
+    max-width: 1920px;
+    width: 100%;
+    max-height: 600px;
+    position: relative;
+  }
 
-    @include mq("phone") {
-      height: 400px;
+  .swiper-pagination-bullet-active {
+    background: $green;
+  }
+
+  .top-slider__inner .swiper-wrapper {
+    box-sizing: content-box;
+  }
+
+  &__prev {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+
+    @include mq ("desktop-3") {
+      left: 0;
     }
 
-    @include mq("desktop") {
-      max-width: 1200px;
-      max-height: 400px;
+    @include mq ("desktop-2") {
+      display: none;
+    }
+  }
+
+  &__next {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: rotate(180deg);
+
+    @include mq ("desktop-3") {
+      right: 0;
     }
 
-    @include mq("phone") {
-      max-width: 600px;
-      max-height: 350px;
+    @include mq ("desktop-2") {
+      display: none;
+    }
+  }
+
+  &__btn {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s;
+
+    &:hover {
+      background-color: #E0EDCF;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 3px rgba(99, 166, 14, 0.5);
+    }
+
+    img {
+      width: 18px;
+      height: 32px;
     }
   }
 
   &__content {
     padding: 140px 0;
 
-    @include mq("desktop") {
-      padding: 60px 0;
+    @include mq("desktop-2") {
+      padding: 60px 60px;
     }
 
     @include mq("phone") {
@@ -79,84 +135,5 @@
     padding: 12px 24px;
     color: $white;
 
-  }
-
-
-
-  &__inner {
-    position: relative;
-
-
-    .slick-prev,
-    .slick-next {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 50;
-      width: 40px;
-      height: 40px;
-      background: rgba(255, 255, 255, 0.8);
-      border-radius: 6px;
-      border: none;
-      cursor: pointer;
-      outline: none;
-      transition: all 0.4s;
-
-      &:hover {
-        background: #e0edcf;
-
-        svg {
-          path {
-            fill: #63A60E;
-          }
-        }
-      }
-
-      &:focus {
-        box-shadow: 0 0 0 3px rgba(99, 166, 14, 0.5);
-        border-radius: 6px;
-      }
-
-      &:active {
-        svg {
-          path {
-            fill: #63A60E;
-          }
-        }
-      }
-
-      @include mq("desktop") {
-        display: none;
-      }
-
-      path {
-        fill: #505050;
-
-      }
-    }
-
-    .slick-disabled {
-      background-color: #fff;
-      box-shadow: 0 7px 20px 0 rgba(192, 192, 192, 0.3);
-
-
-
-      path {
-        fill: red;
-      }
-    }
-
-    .slick-prev {
-      left: 20px;
-    }
-
-    .slick-next {
-      right: 20px;
-    }
-
-    .slick-next:before,
-    .slick-prev:before {
-      display: none;
-    }
   }
 }
